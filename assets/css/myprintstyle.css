@@ -1,0 +1,36 @@
+
+
+@media print {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+body { background:#282828; margin:0; padding:0; font-family: 'Poppins', sans-serif; font-size:15px; font-weight:400; color:#444; }
+h1, h2, h3, h4, h5, h6 { margin:0; font-weight:400; }
+.table-strip { border-collapse: collapse; }
+.table-strip th, .table-strip td { text-align: left; font-size:13px; }
+
+.container { width:800px; margin:50px auto; }
+.invoicearea { padding:25px 50px; background:#fff; width:100%; float:left; }
+.left { float:left; }
+.right { float:right; }
+.header { margin-bottom:25px; }
+.rec-title { text-align:right; }
+.rec-title h3 { font-weight:400; }
+.rec-title h2 { font-size: 21px; }
+.soldname { text-transform:uppercase; font-size:15px; }
+.soldaddress { font-size:16px; font-weight:400; }
+.info-bill { max-width:300px; }
+.bold { font-weight:600 }
+.info-bill.right { max-width:350px; text-align:right }
+.block { display:block; }
+.normal { font-size:400; }
+.state-code small { font-size:100%; }
+.rowfull { float:left; width:100%; }
+ul { margin:0; padding:0; list-style:none; }
+.listitem li span { font-weight:600; }
+.mb15 { margin-bottom:15px; }
+.center { text-align:center !important }
+.table-strip th { font-weight:500; background-color: #f5f5f5; }
+.text-right { text-align:right }
+.sign{ max-height:50px }}

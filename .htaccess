@@ -1,0 +1,107 @@
+Options -Multiviews
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^about/ about.php [L]
+RewriteRule ^about$ about.php [L]
+
+RewriteRule ^contact/ contact.php [L]
+RewriteRule ^contact$ contact.php [L]
+
+RewriteRule ^faq/ faq.php [L]
+RewriteRule ^faq$ faq.php [L]
+
+RewriteRule ^terms-conditions/ terms-conditions.php [L]
+RewriteRule ^terms-conditions$ terms-conditions.php [L]
+
+RewriteRule ^privacy-policy/ privacy-policy.php [L]
+RewriteRule ^privacy-policy$ privacy-policy.php [L]
+
+RewriteRule ^wishlist/ wishlist.php [L]
+RewriteRule ^wishlist$ wishlist.php [L]
+
+RewriteRule ^success-msg/ success-msg.php [L]
+RewriteRule ^success-msg$ success-msg.php [L]
+
+RewriteRule ^my-wishlist/ my-wishlist.php [L]
+RewriteRule ^my-wishlist$ my-wishlist.php [L]
+
+RewriteRule ^manage-address/ manage-address.php [L]
+RewriteRule ^manage-address$ manage-address.php [L]
+
+RewriteRule ^my-order/ my-order.php [L]
+RewriteRule ^my-order$ my-order.php [L]
+
+RewriteRule ^change-password/ change-password.php [L]
+RewriteRule ^change-password$ change-password.php [L]
+
+RewriteRule ^brands/(.*)/ brands.php?pageno=$1 [L]
+RewriteRule ^brands/(.*) brands.php?pageno=$1 [L]
+
+RewriteRule ^search/(.*)/ search.php?pageno=$1 [L]
+RewriteRule ^search/(.*) search.php?pageno=$1 [L]
+
+RewriteRule ^brand-listing/(.*)/(.*)/ brand-listing.php?alias=$1&pageno=$2 [L]
+RewriteRule ^brand-listing/(.*)/(.*) brand-listing.php?alias=$1&pageno=$2 [L]
+
+RewriteRule ^categories/(.*)/(.*)/ categories.php?alias=$1&pageno=$2 [L]
+RewriteRule ^categories/(.*)/(.*) categories.php?alias=$1&pageno=$2 [L]
+
+RewriteRule ^sub-categories/(.*)/(.*)/ sub-categories.php?alias=$1&pageno=$2 [L]
+RewriteRule ^sub-categories/(.*)/(.*) sub-categories.php?alias=$1&pageno=$2 [L]
+
+RewriteRule ^super-sub-categories/(.*)/(.*)/ super-sub-categories.php?alias=$1&pageno=$2 [L]
+RewriteRule ^super-sub-categories/(.*)/(.*) super-sub-categories.php?alias=$1&pageno=$2 [L]
+
+RewriteRule ^detail/(.*)/ detail.php?alias=$1 [L]
+RewriteRule ^detail/(.*) detail.php?alias=$1 [L]
+
+RewriteRule ^help/(.*)/ help.php?alias=$1 [L]
+RewriteRule ^help/(.*) help.php?alias=$1 [L]
+
+RewriteRule ^cartprogress/ cartprogress.php [L]
+RewriteRule ^cartprogress$ cartprogress.php [L]
+
+RewriteRule ^cart/ cart.php [L]
+RewriteRule ^cart$ cart.php [L]
+
+RewriteRule ^checkout/ checkout.php [L]
+RewriteRule ^checkout$ checkout.php [L]
+
+RewriteRule ^checkout-to-ship/ checkout-to-ship.php [L]
+RewriteRule ^checkout-to-ship$ checkout-to-ship.php [L]
+
+RewriteRule ^checkout-to-payment/ checkout-to-payment.php [L]
+RewriteRule ^checkout-to-payment$ checkout-to-payment.php [L]
+
+RewriteRule ^paypal/ paypal.php [L]
+RewriteRule ^paypal$ paypal.php [L]
+
+RewriteRule ^failure/ failure.php [L]
+RewriteRule ^failure$ failure.php [L]
+
+RewriteRule ^success/ success.php [L]
+RewriteRule ^success$ success.php [L]
+
+RewriteRule ^forgot-password/ forgot-password.php [L]
+RewriteRule ^forgot-password$ forgot-password.php [L]
+
+RewriteRule ^reset-password/ reset-password.php [L]
+RewriteRule ^reset-password$ reset-password.php [L]
+
+RewriteRule ^signup/ signup.php [L]
+RewriteRule ^signup$ signup.php [L]
+
+RewriteRule ^login/ login.php [L]
+RewriteRule ^login$ login.php [L]
+
+RewriteRule ^logout/ logout.php [L]
+RewriteRule ^logout$ logout.php [L]
+
+RewriteRule ^my-account/ my-account.php [L]
+RewriteRule ^my-account$ my-account.php [L]
+
+
+
+

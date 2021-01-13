@@ -1,0 +1,9 @@
+<?php 
+include('session.php');
+if(isset($_REQUEST['sub_sub_category_id']) && $_REQUEST['sub_sub_category_id']!="")
+{
+	$sub_sub_category_id = $_REQUEST['sub_sub_category_id'];	$sub_category_id = $newobject->getdata($conn,"sub_sub_categories","sub_category_id","sub_sub_category_id",$sub_sub_category_id);	$category_id = $newobject->getdata($conn,"sub_categories","category_id","sub_category_id",$sub_category_id);
+	?>	<div class="form-group">		<label>Sub Category</label>		<select name="sub_category_id" id="sub_category_id" class="form-control">		<option value="">--Select--</option>		<?php		$query = "SELECT * FROM sub_categories WHERE sub_category_id='$sub_category_id' AND status = 1";		if($stmt = $conn->query($query))		{			while($r = $stmt->fetch_array(MYSQLI_ASSOC))			{				?>				<option value="<?php echo $r['sub_category_id'];?>" <?php if($r["sub_category_id"]==$sub_category_id) { echo "selected"; } ?>><?php echo ucwords($r['title']);?></option> 					<?php 			} 		} 		?>		</select>	</div>	<div class="form-group">		<label>Category</label>		<select name="category_id" id="category_id" class="form-control">		<option value="">--Select--</option>		<?php		$query = "SELECT * FROM categories WHERE category_id='$category_id' AND status = 1";		if($stmt = $conn->query($query))		{			while($r = $stmt->fetch_array(MYSQLI_ASSOC))			{				?>				<option value="<?php echo $r['category_id'];?>" <?php if($r["category_id"]==$category_id) { echo "selected"; } ?>><?php echo ucwords($r['title']);?></option> 					<?php 			} 		} 		?>		</select>	</div> 
+	<?php
+}
+?>
